@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this Grasshopper definition, please cite the accompanying paper."
+title: "Grasshopper implementation of forward design of free-form surfaces composed of rotational patches"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Yuanpeng
+license: GPL-3.0-or-later
+preferred-citation:
+  type: article
+  title: "Forward design of free-form surfaces composed of rotational patches"
+  authors:
+    - family-names: Liu
+      given-names: Yuanpeng
+    - family-names: Xie
+      given-names: Yi Min
+      orcid: "https://orcid.org/0000-0001-5720-6649"
+  journal: "Automation in Construction"
+  year: 2027
+  volume: 193
+  notes: "Article 107376"
+  doi: "10.1016/j.autcon.2026.107376"
