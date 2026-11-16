@@ -2,7 +2,7 @@
 
 This Grasshopper definition takes two curves. The **directrix** sets the path through space, and the **generatrix** sets the cross-section. The definition fits a chain of circular arcs to the path, then sweeps the cross-section around each arc’s axis. Within a patch, the panels in each strip repeat by rotation. Changing the profile produces a new surface from the same fitted path.
 
-Companion to the paper by **Yuanpeng Liu and Yi Min Xie**, *Automation in Construction*, 193 (2027), 107376. [Read the paper](forward%20design%20paper.pdf) · [Journal article](https://doi.org/10.1016/j.autcon.2026.107376)
+Companion to the paper by **Yuanpeng Liu and Yi Min Xie**, *Automation in Construction*, 193 (2027), 107376. [PDF](forward%20design%20paper.pdf) · [View at publisher](https://doi.org/10.1016/j.autcon.2026.107376)
 
 ![Six smooth free-form surfaces shown alongside their tessellations, with matching colors marking repeated elements](docs/images/design-examples.jpg)
 
@@ -11,11 +11,7 @@ Companion to the paper by **Yuanpeng Liu and Yi Min Xie**, *Automation in Constr
 ## Run the example
 
 1. Download and extract the whole repository, or clone it. Keep the bundled `lib/` folder beside the definition. The example uses Rhino 8, Grasshopper, and the Kangaroo 2 components bundled with Rhino. [Setup guide](docs/installation.md)
-2. Start Rhino 8, type `Grasshopper`, and open [arc_vFinal_Release.gh](arc_vFinal_Release.gh). The example directrix and generatrix are stored in the definition. Use **Zoom Extents** in Rhino to see the surface.
-3. In **Generatrix & Sweep**, change the `scale` slider or the slider wired to `Ang`. The new section is carried through all the patches. To see the panels, turn on the Custom Preview components in the **mesh** group and turn off the **surface** previews.
-4. To use your own geometry, right-click the upstream **Curve** parameter wired to `iDirectrix` and choose **Set one Curve**. Do the same for `iGeneratrix` with a planar profile. Both open and closed directrices are supported.
-
-The saved example has a closed directrix. With the saved controls and `EdgeLen` of 10, the Grasshopper solution produces **8 surface patches, 8 panel meshes and 288 quad faces**.
+2. Start Rhino 8, type `Grasshopper`, and open [arc_vFinal_Release.gh](arc_vFinal_Release.gh).
 
 ## How the definition works
 
