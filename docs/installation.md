@@ -7,7 +7,7 @@ Download or clone the complete repository and extract it to a local folder. Keep
 Use Rhino 8 with its included Grasshopper and Kangaroo 2 components. This release was checked with Rhino build `8.37.26307.15002` and Kangaroo 2.5.3. The definition includes the C# components for rebuilding the rail, drawing preview geometry, calculating panel repetition and constructing the supporting-frame meshes.
 
 1. In Rhino, run `Grasshopper` and open [arc_vFinal_Release.gh](../arc_vFinal_Release.gh) from the extracted repository.
-2. Use **Zoom Extents** in Rhino. With the saved inputs, the definition produces eight surface patches. The **optimization** component’s `oReport` output gives the fit, joint angle and frame mismatch for this closed example.
+2. With the saved inputs, the definition produces eight surface patches. The **optimization** component’s `oReport` output gives the fit, joint angle and frame mismatch for this closed example.
 3. Open the [workflow and controls](../README.md#how-the-definition-works) to try a different directrix or profile.
 
 ## Numerical libraries
