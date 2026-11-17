@@ -28,13 +28,13 @@ Companion to the paper by **Yuanpeng Liu and Yi Min Xie**, *Automation in Constr
 
 ## Shape and mesh controls
 
-| Input on `GenerateSurface` | Saved value | Effect |
-| --- | ---: | --- |
-| `Size` / `Scale` | 100 / 0.42 | `Size` is shared with the rail. The profile’s longest bounding-box side is `Size × Scale`, or 42 model units here. |
-| `T` | 0.56 | Chooses the attachment point by fraction of profile arc length. On a closed profile, zero is the seam. |
-| `Ang` | 171° | Rotates the profile about the initial rail tangent. |
-| `OffX` / `OffY` | 3.6 / 5.7 | Signed distances in the first rail’s normal plane. On an arc, positive X is radially outward and positive Y follows tangent × radial. With both at zero the attachment point touches the rail. |
-| `EdgeLen` | 10 | Nominal panel edge length in working model units. Smaller values give finer meshes. A nonpositive value returns the exact surfaces alone. |
+| Input on `GenerateSurface`| Effect |
+| -- | --- |
+| `Size` / `Scale` | `Size` is shared with the rail. The profile’s longest bounding-box side is `Size × Scale`, or 42 model units here. |
+| `T` |  Chooses the attachment point by fraction of profile arc length. On a closed profile, zero is the seam. |
+| `Ang` |  Rotates the profile about the initial rail tangent. |
+| `OffX` / `OffY` |  Signed distances in the first rail’s normal plane. On an arc, positive X is radially outward and positive Y follows tangent × radial. With both at zero the attachment point touches the rail. |
+| `EdgeLen` |  Nominal panel edge length in working model units. Smaller values give finer meshes. A nonpositive value returns the exact surfaces alone. |
 
 A profile drawn anywhere in Rhino is centered and placed automatically. If a wide or offset profile folds back through a sweep axis, reduce `Scale` or adjust `OffX` and `OffY`. Figure 10 in the [paper](forward%20design%20paper.pdf#page=6) illustrates the geometric limit.
 
